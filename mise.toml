@@ -1,0 +1,3 @@
+[tools]
+java = "sapmachine-21.0.11"
+maven = "latest"
