@@ -1,0 +1,22 @@
+ID;NAME;DEPARTMENT_ID
+a01c1d2e-3f45-4a67-8b90-1c2d3e4f5a11;Cadet Navigator;111a2c3d-4e5f-4a61-8b72-9c1d2e3f4a10
+b02d2e3f-4a56-4b78-9c01-2d3e4f5a6b22;Junior Astrogator;111a2c3d-4e5f-4a61-8b72-9c1d2e3f4a10
+c03e3f4a-5b67-4c89-8d12-3e4f5a6b7c33;Astrogator;111a2c3d-4e5f-4a61-8b72-9c1d2e3f4a10
+d04f4a5b-6c78-4d90-9e23-4f5a6b7c8d44;Senior Astrogator;111a2c3d-4e5f-4a61-8b72-9c1d2e3f4a10
+e05a5b6c-7d89-4e01-8f34-5a6b7c8d9e55;Chief Astrogator;111a2c3d-4e5f-4a61-8b72-9c1d2e3f4a10
+f06b6c7d-8e90-4f12-9a45-6b7c8d9e0f66;Pathmaster;111a2c3d-4e5f-4a61-8b72-9c1d2e3f4a10
+a07c7d8e-9f01-4a23-8b56-7c8d9e0f1a77;Lord Navigator;111a2c3d-4e5f-4a61-8b72-9c1d2e3f4a10
+b11d1e2f-3a45-4b67-9c80-1d2e3f4a5b11;Contact Specialist;222b3d4e-5f6a-4b72-9c83-0d2e3f4a5b21
+c12e2f3a-4b56-4c78-8d91-2e3f4a5b6c22;Xenolinguist;222b3d4e-5f6a-4b72-9c83-0d2e3f4a5b21
+d13f3a4b-5c67-4d89-9e02-3f4a5b6c7d33;Diplomatic Officer;222b3d4e-5f6a-4b72-9c83-0d2e3f4a5b21
+e14a4b5c-6d78-4e90-8f13-4a5b6c7d8e44;First Contact Envoy;222b3d4e-5f6a-4b72-9c83-0d2e3f4a5b21
+f15b5c6d-7e89-4f01-9a24-5b6c7d8e9f55;Senior Envoy;222b3d4e-5f6a-4b72-9c83-0d2e3f4a5b21
+a16c6d7e-8f90-4a12-8b35-6c7d8e9f0a66;Chief Envoy;222b3d4e-5f6a-4b72-9c83-0d2e3f4a5b21
+b17d7e8f-9a01-4b23-9c46-7d8e9f0a1b77;Grand Ambassador;222b3d4e-5f6a-4b72-9c83-0d2e3f4a5b21
+c21e1f2a-3b45-4c67-8d90-1e2f3a4b5c11;Patrol Officer;333c4e5f-6a7b-4c83-9d94-1e3f4a5b6c32
+d22f2a3b-4c56-4d78-9e01-2f3a4b5c6d22;Fleet Officer;333c4e5f-6a7b-4c83-9d94-1e3f4a5b6c32
+e23a3b4c-5d67-4e89-8f12-3a4b5c6d7e33;Commander;333c4e5f-6a7b-4c83-9d94-1e3f4a5b6c32
+f24b4c5d-6e78-4f90-9a23-4b5c6d7e8f44;Fleet Captain;333c4e5f-6a7b-4c83-9d94-1e3f4a5b6c32
+a25c5d6e-7f89-4a01-8b34-5c6d7e8f9a55;Commodore;333c4e5f-6a7b-4c83-9d94-1e3f4a5b6c32
+b26d6e7f-8a90-4b12-9c45-6d7e8f9a0b66;Stellar Admiral;333c4e5f-6a7b-4c83-9d94-1e3f4a5b6c32
+c27e7f8a-9b01-4c23-8d56-7e8f9a0b1c77;Grand Admiral;333c4e5f-6a7b-4c83-9d94-1e3f4a5b6c32

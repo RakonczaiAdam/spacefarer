@@ -29,16 +29,17 @@ entity IntergalacticPosition : cuid {
 entity Spacefarer : cuid {
      name : String(255) not null;
      email : String(255) not null;
-     wormholeNavigationSkill : Association to one WormholeNavigationLevel;
+     wormholeNavigationSkill : Association to one WormholeNavigationLevel not null;
      originPlanet : Association to one Planet;
      spacesuitColorCode : String(7) default '#FFFFFF';
+     stardustCollection: Composition of many SpacefarerStardust on stardustCollection.spacefarer = $self;
 }
 
 entity StardustType : cuid {
      name : String(255) not null;
 }
 
-entity StardustCollection : cuid {
+entity SpacefarerStardust : cuid {
      quantity : Integer not null;
      unit : String(255) default 'Void Micron(s)';
      stardustType : Association to one StardustType not null;
