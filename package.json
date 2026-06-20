@@ -10,15 +10,22 @@
         "kind": "mocked",
         "users": {
           "alice": {
-            "roles": ["SpaceRegistryManager"],
+            "roles": [
+              "SpaceRegistryManager"
+            ],
             "originPlanet": "b22e4a6d-3c02-4d8f-9b4e-1a2d7c3f8b12"
           },
           "bob": {
-            "roles": ["SpaceRegistryManager"],
+            "roles": [
+              "SpaceRegistryManager"
+            ],
             "originPlanet": "e55b7d9a-6f35-4a2c-8e7b-4d5a0f6c1e45"
           }
         }
       }
     }
-  }
+  },
+  "sapux": [
+    "app/spacefarer-list"
+  ]
 }
