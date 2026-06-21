@@ -7,11 +7,9 @@ This step needed for the email sending function which is a sandbox email sender 
 
 - SQLite3 need to be installed `sudo apt install sqlite3`
 
-- To seed data from csv files located in db/data/ run command `cds deploy --to sqlite:srv/db.sqlite`
-
 ## Authentication
 
 In this project we use mock authentication, the user credentials are the following:
-user: bob
-password: bob
+- user: bob
+- password: bob
 
