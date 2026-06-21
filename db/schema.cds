@@ -30,9 +30,10 @@ entity Spacefarer : cuid {
      name : String(255) not null;
      email : String(255) not null;
      wormholeNavigationSkill : Association to one WormholeNavigationLevel not null;
-     originPlanet : Association to one Planet;
+     originPlanet : Association to one Planet not null;
+     originPlanetName : String = originPlanet.name;
      spacesuitColor : String(255) default 'white';
-     stardustCollection: Composition of many SpacefarerStardust on stardustCollection.spacefarer = $self;
+     stardustCollection : Composition of many SpacefarerStardust on stardustCollection.spacefarer = $self;
 }
 
 entity StardustType : cuid {

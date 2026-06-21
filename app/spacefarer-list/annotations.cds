@@ -13,7 +13,17 @@ annotate service.Spacefarer with @(
             {
                 $Type : 'UI.DataField',
                 Value : spacesuitColor,
-                Label : 'spacesuitColor',
+                Label : 'Spacesuit Color',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : email,
+                Label : 'Email',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : originPlanetName,
+                Label : 'Original Planet',
             },
         ],
     },
