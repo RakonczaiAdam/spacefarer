@@ -1,5 +1,7 @@
 ## Environment
 
+Create a .env file based on the .env-example
+
 Expose environment variables from .env with command: `export $(cat .env | xargs)`
 This step needed for the email sending function which is a sandbox email sender on Mailtrap
 
