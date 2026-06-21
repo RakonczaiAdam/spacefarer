@@ -113,11 +113,23 @@
               "controlConfiguration": {
                 "@com.sap.vocabularies.UI.v1.LineItem": {
                   "tableSettings": {
-                    "type": "ResponsiveTable"
+                    "type": "ResponsiveTable",
+                    "personalization": {
+                      "sort": true,
+                      "filter": true
+                    }
+                  },
+                  "columns": {
+                    "DataField::name": {
+                      "width": "10%"
+                    },
+                    "DataField::spacesuitColor": {
+                      "width": "10%"
+                    }
                   }
                 }
               },
-              "initialLoad": "Enabled"
+              "initialLoad": "Auto"
             }
           }
         },
@@ -128,7 +140,14 @@
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/Spacefarer"
+              "contextPath": "/Spacefarer",
+              "controlConfiguration": {
+                "stardustCollection/@com.sap.vocabularies.UI.v1.LineItem#StardustCollection": {
+                  "tableSettings": {
+                    "type": "ResponsiveTable"
+                  }
+                }
+              }
             }
           }
         }

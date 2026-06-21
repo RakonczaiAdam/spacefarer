@@ -31,7 +31,7 @@ entity Spacefarer : cuid {
      email : String(255) not null;
      wormholeNavigationSkill : Association to one WormholeNavigationLevel not null;
      originPlanet : Association to one Planet;
-     spacesuitColorCode : String(7) default '#FFFFFF';
+     spacesuitColor : String(255) default 'white';
      stardustCollection: Composition of many SpacefarerStardust on stardustCollection.spacefarer = $self;
 }
 
@@ -43,5 +43,6 @@ entity SpacefarerStardust : cuid {
      quantity : Integer not null;
      unit : String(255) default 'Void Micron(s)';
      stardustType : Association to one StardustType not null;
+     stardustTypeName: String = stardustType.name;
      spacefarer : Association to one Spacefarer not null;
 }

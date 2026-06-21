@@ -8,3 +8,8 @@
 
 The Intergalactic positions stored in IntergalacticPosition model, where every position ever dealt are stored with the start and end of the service. The active service of the Spacefarer is where the end of service in null.
 
+## Environment
+
+Expose environment variables from .env with command: `export $(cat .env | xargs)`
+This step needed for the email sending function which is a sandbox email sender on Mailtrap
+

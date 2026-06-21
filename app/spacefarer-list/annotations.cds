@@ -7,18 +7,13 @@ annotate service.Spacefarer with @(
         Data : [
             {
                 $Type : 'UI.DataField',
-                Label : 'name',
+                Label : 'Name',
                 Value : name,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'email',
-                Value : email,
-            },
-            {
-                $Type : 'UI.DataField',
-                Label : 'spacesuitColorCode',
-                Value : spacesuitColorCode,
+                Value : spacesuitColor,
+                Label : 'spacesuitColor',
             },
         ],
     },
@@ -29,31 +24,35 @@ annotate service.Spacefarer with @(
             Label : 'General Information',
             Target : '@UI.FieldGroup#GeneratedGroup',
         },
+        {
+            $Type : 'UI.ReferenceFacet',
+            Label : 'Stardust Collection',
+            ID : 'StardustCollection',
+            Target : 'stardustCollection/@UI.LineItem#StardustCollection',
+        },
     ],
     UI.LineItem : [
         {
             $Type : 'UI.DataField',
-            Label : 'name',
+            Label : 'Name',
             Value : name,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'email',
-            Value : email,
-        },
-        {
-            $Type : 'UI.DataField',
-            Label : 'spacesuitColorCode',
-            Value : spacesuitColorCode,
+            Value : spacesuitColor,
+            Label : 'Spacesuit Color',
         },
     ],
     UI.HeaderInfo : {
-        TypeName : '',
-        TypeNamePlural : '',
+        TypeName : 'Spacefarer',
+        TypeNamePlural : 'Spacefarers',
+        Title : {
+            $Type : 'UI.DataField',
+            Value : name,
+        },
     },
     UI.SelectionFields : [
-        stardustCollection.quantity,
-        stardustCollection.stardustType_ID,
+        
     ],
 );
 
@@ -64,4 +63,24 @@ annotate service.SpacefarerStardust with {
 annotate service.SpacefarerStardust with {
     stardustType @Common.Label : 'stardustCollection/stardustType_ID'
 };
+
+annotate service.SpacefarerStardust with @(
+    UI.LineItem #StardustCollection : [
+        {
+            $Type : 'UI.DataField',
+            Value : spacefarer.stardustCollection.stardustTypeName,
+            Label : 'Type',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : spacefarer.stardustCollection.quantity,
+            Label : 'Quantity',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : spacefarer.stardustCollection.unit,
+            Label : 'Unit',
+        },
+    ]
+);
 

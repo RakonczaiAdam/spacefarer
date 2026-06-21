@@ -10,12 +10,14 @@
         "kind": "mocked",
         "users": {
           "alice": {
+            "password": "alice",
             "roles": [
               "SpaceRegistryManager"
             ],
             "originPlanet": "b22e4a6d-3c02-4d8f-9b4e-1a2d7c3f8b12"
           },
           "bob": {
+            "password": "bob",
             "roles": [
               "SpaceRegistryManager"
             ],
