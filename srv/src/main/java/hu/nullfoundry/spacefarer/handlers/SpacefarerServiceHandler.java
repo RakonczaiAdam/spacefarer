@@ -82,8 +82,12 @@ public class SpacefarerServiceHandler implements EventHandler {
 
                     Intergalactic Command
                     """.formatted(name));
-               mailSender.send(message);     
-               System.out.println("Email sent to %s".formatted(email));
+               try {
+                    mailSender.send(message);     
+                    System.out.println("Email sent to %s".formatted(email));
+               } catch (Exception e) {
+                    System.out.println("Email sending faliure due to license limitation");
+               }
           }
      }
 

@@ -1,6 +1,7 @@
 
 ---
 spring:
+  config.activate.on-profile: default
   mail:
     host: sandbox.smtp.mailtrap.io
     port: 2525
@@ -25,3 +26,15 @@ spring:
     init:
       mode: always
       platform: sqlite
+cds:
+  security:
+    mock:
+      enabled: true
+      users:
+        bob:
+          password: bob
+          systemUser: true
+          roles:
+            - SpaceRegistryManager
+          additional:
+            originPlanet: a11d3f5c-2b91-4c7e-8a3d-9f1c6b2e7a01

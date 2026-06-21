@@ -3,9 +3,10 @@ GET http://localhost:8080/odata/v4/SpacefarerService/Spacefarer?$expand=stardust
 Authorization: Basic Ym9iOmJvYg==
 Content-Type: application/json
 
-### CREATE
+### CREATE SAME PLANET
 POST http://localhost:8080/odata/v4/SpacefarerService/Spacefarer?$expand=stardustCollection
 Content-Type: application/json
+Authorization: Basic Ym9iOmJvYg==
 
 { 
   "name": "Zorg",
@@ -13,6 +14,31 @@ Content-Type: application/json
   "spacesuitColor": "green",
   "wormholeNavigationSkill_ID": "9f1c2c6a-3d7b-4b2a-9f4e-1a8f6c2d9a11",
   "originPlanet_ID": "a11d3f5c-2b91-4c7e-8a3d-9f1c6b2e7a01",
+  "stardustCollection": [
+    {
+      "quantity": 100,
+      "unit": "Void Micron(s)",
+      "stardustType_ID": "111f1a2b-3c45-4d67-8e90-1a2b3c4d5e01"
+    },
+    {
+      "quantity": 50,
+      "unit": "Void Micron(s)",
+      "stardustType_ID": "222a2b3c-4d56-4e78-9f01-2b3c4d5e6f12"
+    }
+  ]
+}
+
+### CREATE DIFFERENT PLANET
+POST http://localhost:8080/odata/v4/SpacefarerService/Spacefarer?$expand=stardustCollection
+Content-Type: application/json
+Authorization: Basic Ym9iOmJvYg==
+
+{ 
+  "name": "Peter",
+  "email": "peter@spaceandventure.com",
+  "spacesuitColor": "black",
+  "wormholeNavigationSkill_ID": "9f1c2c6a-3d7b-4b2a-9f4e-1a8f6c2d9a11",
+  "originPlanet_ID": "b22e4a6d-3c02-4d8f-9b4e-1a2d7c3f8b12",
   "stardustCollection": [
     {
       "quantity": 100,
